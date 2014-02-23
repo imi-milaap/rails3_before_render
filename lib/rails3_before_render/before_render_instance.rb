@@ -8,7 +8,10 @@ module Rails3BeforeRender
     end
 
     def render_with_before_render_filter *opts, &blk
-      run_callbacks :render, action_name do
+      args = [ :render ]
+      args << action_name if ActionPack::VERSION::STRING =~ /^3/
+
+      run_callbacks *args do
         render_without_before_render_filter(*opts, &blk)
       end
     end
