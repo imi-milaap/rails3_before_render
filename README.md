@@ -52,3 +52,5 @@ Provided methods:
 Copyright (c) 2011 Vladimir Penkin, released under the MIT license
 
 Thanks to Drake Wilson (@menostos) for initiative to convert this to ruby gem.
+
+Rails 4 support by Dheeraj Kumar (@codepodu)
