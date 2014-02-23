@@ -1,4 +1,6 @@
 language: ruby
+cache: bundler
+script: "bundle exec rake appraisal"
 rvm:
   - 1.9.2
   - 1.9.3
